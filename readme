@@ -1,0 +1,12 @@
+Dependencies:
+
+Python3
+Discord.py
+
+Features:
+
+clear
+kick
+ban
+unban
+searching for specific words
