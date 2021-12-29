@@ -1,58 +1,34 @@
 import discord
-import random
 from discord.ext import commands
+import os
+from apikeys import BOTTOKEN
 
-from apikeys import *
+intents = discord.Intents.default()
+intents.members = True
 
-client = commands.Bot(command_prefix = "!")
+client = commands.Bot(command_prefix="!", intents=intents)
 
 
-#when bot is online
 @client.event
 async def on_ready():
-    print("Bekebot is online")
+    await client.change_presence(
+        activity=discord.Streaming(
+            name="made by Beke", url="https://discord.com/invite/4cRse2E5Yw"
+        )
+    )
+    print("Bot ready to use")
 
 
-#clear
-@client.command()
-async def clear(ctx, amount=5):
-    await ctx.channel.purge(limit=amount+1)
-    await ctx.send(f"Es wurden {amount} Nachrichten gelöscht")
+initial_extensions = []
 
+for filename in os.listdir("./cogs"):
+    if filename.endswith(".py"):
+        initial_extensions.append("cogs." + filename[:-3])
 
-#kick
-@client.command()
-async def kick(ctx, member : discord.Member, *, reason=None):
-    await member.kick(reason=reason)
-    await ctx.send (f"{member.mention} wurde gekickt \n Grund: {reason}")
+if __name__ == "__main__":
+    for extension in initial_extensions:
+        client.load_extension(extension)
 
+print(initial_extensions)
 
-#ban
-@client.command()
-async def ban(ctx, member : discord.Member, *, reason=None):
-    await member.ban(reason=reason)
-    await ctx.send (f"{member.mention} wurde gebannt \n Grund: {reason}")
-
-
-#unban
-@client.command()
-async def unban(ctx, *, member):
-    banned_users = await ctx.guild.bans()
-    member_name, member_discriminator = member.split("#")
-    
-    for ban_entry in banned_users:
-        user=ban_entry.user
-
-        if(user.name, user.discriminator) == (member_name,member_discriminator):
-            await ctx.guild.unban(user)
-            await ctx.send(f"{user.mention} wurde entbannt")
-            return
-
-
-#checks for specific messages      
-@client.event
-async def on_message(message):
-    if message.content == "hilfe":
-        await message.channel.send(f"Es wurde ein Mod wurde benachrichtigt")
-
-client.run(BOTTOKEN)    
+client.run(BOTTOKEN)
