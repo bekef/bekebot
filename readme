@@ -1,5 +1,6 @@
 Dependencies:
 
+you have to create a apikeys.py file and enter your bottoken for it to work
 Python3
 Discord.py
 
