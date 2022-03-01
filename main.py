@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import os
-from apikeys import BOTTOKEN
+from apikeys import bottoken
 
 intents = discord.Intents.default()
 intents.members = True
@@ -31,4 +31,4 @@ if __name__ == "__main__":
 
 print(initial_extensions)
 
-client.run(BOTTOKEN)
+client.run(bottoken)
