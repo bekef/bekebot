@@ -34,5 +34,6 @@ class admin(commands.Cog):
                 await ctx.send(f"{user.mention} wurde entbannt")
                 return
 
+
 def setup(client):
     client.add_cog(admin(client))
