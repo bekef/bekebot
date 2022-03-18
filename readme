@@ -1,7 +1,7 @@
 Dependencies:
 
 Python3
-Discord.py
+Py-cord 2.0
 
 Features:
 
@@ -11,3 +11,4 @@ ban
 unban
 warnsystem
 economysystem
+quizsystem
