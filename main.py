@@ -1,13 +1,12 @@
 import discord
 from discord.ext import commands
+from discord.commands import slash_command
+from discord.ui import Button, View
+import random
 import os
-from apikeys import bottoken
+from config import TOKEN
 
-intents = discord.Intents.default()
-intents.members = True
-
-client = commands.Bot(command_prefix="!", intents=intents)
-
+client = commands.Bot(command_prefix=":")
 
 @client.event
 async def on_ready():
@@ -31,4 +30,4 @@ if __name__ == "__main__":
 
 print(initial_extensions)
 
-client.run(bottoken)
+client.run(TOKEN)
