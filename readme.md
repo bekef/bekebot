@@ -1,4 +1,6 @@
+## Have a question? Join the official Discord for Help!
 
+![Discord](https://discord.com/api/guilds/954060045056901200/widget.png?style=banner2)
 
 ## Dependencies:
 
@@ -50,14 +52,10 @@ Py-cord 2.0.5b
 ### Go Here: [Discord Developer Portal](https://discord.com/developers/applications)
 
 ### Create A Application
-<img align="center" alt="application" width="600px" src="https://user-images.githubusercontent.com/66865117/159115848-ee03cdeb-2009-4fad-a101-5e832b189d55.png" />
+<img align="center" alt="application" width="500px" src="https://user-images.githubusercontent.com/66865117/159115848-ee03cdeb-2009-4fad-a101-5e832b189d55.png" />
 
 ### Click on Bot and create a Bot
-<img align="center" alt="bot" width="450px" src="https://user-images.githubusercontent.com/66865117/159115856-d99adf7c-ec21-4e79-964d-bee342b2356f.png" />
+<img align="center" alt="bot" width="300px" src="https://user-images.githubusercontent.com/66865117/159115856-d99adf7c-ec21-4e79-964d-bee342b2356f.png" />
 
 ### Get your token
-<img align="center" alt="tokenget" width="600px" src="https://user-images.githubusercontent.com/66865117/159115860-afa8b0f6-1810-43ac-931b-19a126df7089.png" />
-
-## Still have questions? Join the official Discord for Help!
-
-![Discord](https://discord.com/api/guilds/954060045056901200/widget.png?style=banner2)
+<img align="center" alt="tokenget" width="400px" src="https://user-images.githubusercontent.com/66865117/159115860-afa8b0f6-1810-43ac-931b-19a126df7089.png" />
