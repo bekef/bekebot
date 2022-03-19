@@ -1,5 +1,4 @@
-## Official Discord Server for BekeBot
-![Discord](https://discord.com/api/guilds/954060045056901200/widget.png?style=banner2)
+
 
 ## Dependencies:
 
@@ -58,3 +57,7 @@ Py-cord 2.0.5b
 
 ### Get your token
 <img align="center" alt="tokenget" width="600px" src="https://user-images.githubusercontent.com/66865117/159115860-afa8b0f6-1810-43ac-931b-19a126df7089.png" />
+
+## Still have questions? Join the official Discord for Help!
+
+![Discord](https://discord.com/api/guilds/954060045056901200/widget.png?style=banner2)
