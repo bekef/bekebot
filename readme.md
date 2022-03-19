@@ -9,11 +9,11 @@ Py-cord 2.0.5b
 
 ## Features:
 
-warnsystem
+⚠  warnsystem
 
-economysystem
+💵 economysystem
 
-quizsystem (only German)
+❓  quizsystem (only German)
 
 ## How to add the Bot to your server
 
