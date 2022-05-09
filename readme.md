@@ -12,7 +12,7 @@ Py-cord 2.0.5b
 
 💵 economysystem
 
-❓  quizsystem (only German)
+❓  quizsystem
 
 ## How to add the Bot to your server
 
